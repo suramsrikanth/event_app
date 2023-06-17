@@ -23,7 +23,7 @@ mongoose.connect('mongodb+srv://test:5w1dlkPM7fUg9L5b@cluster0.eefkrs6.mongodb.n
 var db = mongoose.connection;
 
 db.on('open', function() {
-    console.log('App is connected to database:');
+    console.log('App is connected to database.');
 });
 
 db.on('error', function(err) {
